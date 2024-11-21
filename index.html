@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Schedule App</title>
+  <title>Meeting Scheduler</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,45 +11,62 @@
     <!-- Header Section -->
     <header class="header">
       <div class="menu-icon">☰</div>
-      <div class="month">March</div>
-      <div class="calendar">
-        <span class="day">15</span>
-        <span class="label">Today</span>
-      </div>
+      <h1 class="month">March</h1>
+      <div class="profile-picture"></div>
     </header>
+
+    <!-- Calendar Section -->
+    <div class="calendar">
+      <div class="day">12</div>
+      <div class="day">13</div>
+      <div class="day">14</div>
+      <div class="day active">15</div>
+      <div class="day">16</div>
+      <div class="day">17</div>
+      <div class="day">18</div>
+    </div>
+
+    <!-- Highlighted Meeting -->
+    <div class="highlight-meeting">
+      <h2 class="highlight-title">Team Meeting</h2>
+      <p class="highlight-description">Discussing the project with the team</p>
+      <div class="highlight-check">✔</div>
+    </div>
 
     <!-- Task List Section -->
     <main class="tasks">
-      <div class="task-item task-team-meeting">
+      <!-- Task Item -->
+      <div class="task-item">
+        <div class="task-time">6:00 - 7:00 PM</div>
         <div class="task-content">
-          <h2 class="task-title">Team Meeting</h2>
-          <p class="task-description">Discussing the project with the team</p>
-        </div>
-        <div class="task-meta">
-          <span class="task-time">Today</span>
-          <span class="task-duration">1:30h</span>
-        </div>
-      </div>
-
-      <div class="task-item task-one-to-one">
-        <div class="task-content">
-          <h2 class="task-title">One-to-one</h2>
+          <h3 class="task-title">One-to-one</h3>
           <p class="task-description">Repeats every two weeks</p>
+          <div class="avatars">
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+          </div>
         </div>
-        <div class="task-meta">
-          <span class="task-time">Today</span>
-          <span class="task-duration">1h</span>
+        <div class="task-duration">
+          <span>Today</span>
+          <span>1h</span>
         </div>
       </div>
 
-      <div class="task-item task-pm-meeting">
+      <!-- Task Item -->
+      <div class="task-item">
+        <div class="task-time">6:00 - 7:30 PM</div>
         <div class="task-content">
-          <h2 class="task-title">PM Meeting</h2>
+          <h3 class="task-title">PM Meeting</h3>
           <p class="task-description">Discussion of tasks for the month</p>
+          <div class="avatars">
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+            <div class="avatar"></div>
+          </div>
         </div>
-        <div class="task-meta">
-          <span class="task-time">Today</span>
-          <span class="task-duration">1:30h</span>
+        <div class="task-duration">
+          <span>Today</span>
+          <span>1h 30m</span>
         </div>
       </div>
     </main>
