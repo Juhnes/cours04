@@ -3,54 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calendar App</title>
+  <title>Schedule App</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="app-container">
+  <div class="app">
+    <!-- Header Section -->
     <header class="header">
-      <h1>March</h1>
-      <div class="date-selector">
-        <span>15</span>
-        <span>Today</span>
+      <div class="menu-icon">☰</div>
+      <div class="month">March</div>
+      <div class="calendar">
+        <span class="day">15</span>
+        <span class="label">Today</span>
       </div>
     </header>
 
-    <main class="task-list">
-      <div class="task">
-        <div class="task-header team-meeting">
-          <h2>Team Meeting</h2>
-          <p>Discussing the project with the team</p>
+    <!-- Task List Section -->
+    <main class="tasks">
+      <div class="task-item task-team-meeting">
+        <div class="task-content">
+          <h2 class="task-title">Team Meeting</h2>
+          <p class="task-description">Discussing the project with the team</p>
         </div>
-        <div class="task-details">
-          <span>Today</span>
-          <span>1:30h</span>
-        </div>
-      </div>
-
-      <div class="task">
-        <div class="task-header one-to-one">
-          <h2>One-to-one</h2>
-          <p>Repeats every two weeks</p>
-        </div>
-        <div class="task-details">
-          <span>Today</span>
-          <span>1h</span>
+        <div class="task-meta">
+          <span class="task-time">Today</span>
+          <span class="task-duration">1:30h</span>
         </div>
       </div>
 
-      <div class="task">
-        <div class="task-header pm-meeting">
-          <h2>PM Meeting</h2>
-          <p>Discussion of tasks for the month</p>
+      <div class="task-item task-one-to-one">
+        <div class="task-content">
+          <h2 class="task-title">One-to-one</h2>
+          <p class="task-description">Repeats every two weeks</p>
         </div>
-        <div class="task-details">
-          <span>Today</span>
-          <span>1:30h</span>
+        <div class="task-meta">
+          <span class="task-time">Today</span>
+          <span class="task-duration">1h</span>
+        </div>
+      </div>
+
+      <div class="task-item task-pm-meeting">
+        <div class="task-content">
+          <h2 class="task-title">PM Meeting</h2>
+          <p class="task-description">Discussion of tasks for the month</p>
+        </div>
+        <div class="task-meta">
+          <span class="task-time">Today</span>
+          <span class="task-duration">1:30h</span>
         </div>
       </div>
     </main>
   </div>
 </body>
 </html>
-
